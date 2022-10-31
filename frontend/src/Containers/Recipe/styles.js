@@ -9,45 +9,47 @@ export const RecipeWrapper = styled.div`
   padding: 8px;
 `
 
-export const detailWrapper = {
-  backgroundColor: "#EFF0DE",
-  width: "1000px",
-  display: "flex",
-  padding: "20px",
-  borderRadius: "10px",
-  textAlign: "justify",
-  fontSize: "18px",
-}
+export const MainWrapper = styled.div`
+  background-color: #eff0de;
+  width: 1000px;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 18px;
+`
 
-export const leftDetail = {
-  backgroundColor: "#96B68A",
-  border: "1px solid brown",
-  height: "500px",
-  padding: "15px",
-  flex: 2,
-  borderRadius: "10px",
-}
-export const rightDetail = {
-  backgroundColor: "#F6B66A",
-  border: "1px solid brown",
-  height: "500px",
-  padding: "15px",
-  flex: 1,
-  borderRadius: "10px",
-  textAlign: "Center",
-}
+export const RecipeDetailLeft = styled.div`
+  background-color: #96b68a;
+  border: 1px solid brown;
+  height: 500px;
+  padding: 15px;
+  flex: 2;
+  border-radius: 10px;
+`
+export const RecipeDetailRight = styled.div`
+  background-color: #f6b66a;
+  border: 1px solid brown;
+  height: 500px;
+  padding: 15px;
+  flex: 1;
+  border-radius: 10px;
+  text-align: Center;
+`
 
-export const nameStyle = {
-  textAlign: "center",
-  color: "white",
-  fontSize: "20px",
-  marginBottom: "10px",
-}
+export const InstructionWrapper = styled.div``
 
-export const ingStyle = {
-  fontSize: "20px",
-  margin: "15px 0px",
-  border: "1px solid white",
-  borderRadius: "10px",
-  padding: "5px",
-}
+export const NameWrapper = styled.div`
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  marginbottom: 10px;
+`
+
+export const Ingredient = styled.div`
+  font-size: 20px;
+  margin: 15px 0px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+`

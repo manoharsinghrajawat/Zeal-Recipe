@@ -3,11 +3,12 @@ import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import {
   RecipeWrapper,
-  detailWrapper,
-  leftDetail,
-  rightDetail,
-  nameStyle,
-  ingStyle,
+  MainWrapper,
+  RecipeDetailLeft,
+  RecipeDetailRight,
+  NameWrapper,
+  InstructionWrapper,
+  Ingredient,
 } from "./styles"
 import * as actions from "../../actions"
 import withRouter from "./withRouter"
@@ -23,19 +24,19 @@ class Recipe extends Component {
     return (
       <RecipeWrapper>
         {recipe && recipe.ok && (
-          <div style={detailWrapper}>
-            <div style={leftDetail}>
-              <div style={nameStyle}>{recipe.data.name}</div>
-              <div>{recipe.data.instructions}</div>
-            </div>
-            <div style={rightDetail}>
+          <MainWrapper>
+            <RecipeDetailLeft>
+              <NameWrapper>{recipe.data.name}</NameWrapper>
+              <InstructionWrapper>
+                {recipe.data.instructions}
+              </InstructionWrapper>
+            </RecipeDetailLeft>
+            <RecipeDetailRight>
               {recipe.data.ingredients.map((ing) => (
-                <div style={ingStyle} key={ing._id}>
-                  {ing.name}
-                </div>
+                <Ingredient key={ing._id}>{ing.name}</Ingredient>
               ))}
-            </div>
-          </div>
+            </RecipeDetailRight>
+          </MainWrapper>
         )}
       </RecipeWrapper>
     )

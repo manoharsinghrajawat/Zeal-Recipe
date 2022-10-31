@@ -14952,11 +14952,6 @@ typescript@4.2.4:
     nodemon: 2.0.7
     prettier: 2.3.2
     typescript: 4.2.4
-  dependenciesMeta:
-    html-pdf@3.0.1:
-      unplugged: true
-    mongoose@5.12.7:
-      unplugged: true
   languageName: unknown
   linkType: soft
 
