@@ -21,7 +21,7 @@ class Home extends Component {
     this.fetchSearch = this.fetchSearch.bind(this)
     this.state = {
       term: "",
-      ingredients: ["flour", "sugar"],
+      ingredients: ["flour", "sugar", "salt", "butter", "milk"],
     }
   }
   async fetchSearch() {

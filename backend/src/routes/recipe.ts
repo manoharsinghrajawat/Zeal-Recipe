@@ -23,11 +23,13 @@ export const recipeMiddleware = async (
   } else {
     RecipeModel.findOne({ _id: req.params.id },
       function (err,recipe) {
+        //If the id provided in the request is not matched then the error is thrown
         if (err) {
           return res.status(500).send({
             ok: false,
             error: err.message
           })
+        //If there is no error and the recipe is not returned then the error is thrown
         } else if (!recipe) {
           return res.status(404).send({
             ok: false,

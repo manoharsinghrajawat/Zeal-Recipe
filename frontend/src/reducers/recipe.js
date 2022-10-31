@@ -4,6 +4,7 @@ const initialState = {
   recipe: null,
   isLoading: false,
   error: null,
+  ingredientsSelected: ["flour", "sugar"],
 }
 
 const recipeFetching = (state) => {
