@@ -12,6 +12,7 @@ import {
 } from "./styles"
 import * as actions from "../../actions"
 import withRouter from "./withRouter"
+import { LinearProgress } from "@material-ui/core"
 
 class Recipe extends Component {
   constructor(props) {

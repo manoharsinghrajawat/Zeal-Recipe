@@ -26,10 +26,10 @@ export const recipeMiddleware = async (
         if (err) {
           return res.status(500).send({
             ok: false,
-            error: 'There is some issue with the server! Please come back later.'
+            error: err.message
           })
         } else if (!recipe) {
-          return res.status(500).send({
+          return res.status(404).send({
             ok: false,
             error: 'There is no recipe found for this id provided'
           })
