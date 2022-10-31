@@ -43,7 +43,7 @@ export const NameWrapper = styled.div`
   text-align: center;
   color: white;
   font-size: 20px;
-  marginbottom: 10px;
+  margin-bottom: 10px;
 `
 
 export const Ingredient = styled.div`
