@@ -38,6 +38,7 @@ class Recipe extends Component {
             </RecipeDetailRight>
           </MainWrapper>
         )}
+        {isLoading && <LinearProgress />}
       </RecipeWrapper>
     )
   }
