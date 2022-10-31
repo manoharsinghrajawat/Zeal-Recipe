@@ -41,15 +41,6 @@
     "typescript": "4.2.4"
   },
   "engines": {
-    "node": ">=14.15.0"
-  },
-  "dependenciesMeta": {
-    "html-pdf@3.0.1": {
-      "unplugged": true
-    },
-    "mongoose@5.12.7": {
-      "unplugged": true
-    }
-  },
-  "packageManager": "yarn@3.0.0"
+    "yarn": "1.22.19"
+  }
 }
