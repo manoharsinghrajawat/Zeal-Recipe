@@ -1,4 +1,4 @@
-import express from "express"
+import express, {Request,Response} from "express"
 import bodyParser from "body-parser"
 import http from "http"
 import path from 'path';
@@ -19,6 +19,9 @@ const appStartup = async () : Promise<void> => {
   // create our routes
   app.post("/api/search", searchMiddleware)
   app.get("/api/recipe/:id",recipeMiddleware)
+  app.get("/jaimahakal",(req: Request, res: Response) => {
+    res.send("Jai Mahakal")
+  })
   //Handling errors through rollbar sdk middleware
   app.get("*", (req, res) => {
       res.sendFile(
